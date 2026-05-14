@@ -268,7 +268,7 @@ pcf_to_vpcf = {
             'output maximum': 'm_flOutputMax',
             'output is scalar of initial random range': BoolToSetKV('m_nSetMethod', "PARTICLE_SET_SCALE_CURRENT_VALUE"),#'m_bScaleInitialRange',
             'only active within specified difference': 'm_bActiveRange',
-            'also set ouput to previous particle': 'm_bSetPreviousParticle',
+            'also set output to previous particle': 'm_bSetPreviousParticle',
         }),
         'Remap Scalar': ('C_OP_RemapScalar', {
             'input field': 'm_nFieldInput',
@@ -634,7 +634,7 @@ pcf_to_vpcf = {
             'ending control point': 'm_nEndCP',
             'offset control point': 'm_nOffsetCP',
             'input control point': 'm_nInputCP',
-            'output control point': 'm_nOuputCP',
+            'output control point': 'm_nOutputCP',
             'offset amount': 'm_vecOffset',
             'treat distance between points as radius': 'm_bRadialCheck',
             'treat offset as scale of total distance': 'm_bScaleOffset',
@@ -681,7 +681,7 @@ pcf_to_vpcf = {
             'reference CP 2': 'm_nRefCP2',
             'CP movement tolerance': 'm_flTolerance',
             'interpolation rate': 'm_flLerpRate',
-            'interploation distance tolerance cp': 'm_nLerpCP',
+            'interpolation distance tolerance cp': 'm_nLerpCP',
         }),
         'Inherit Attribute From Parent Particle': ('C_OP_InheritFromParentParticlesV2', { # V2
             # inverse booltosetkv
@@ -735,7 +735,7 @@ pcf_to_vpcf = {
             'Rotation Axis Max': 'm_vecRotAxisMax',
             'Rotation Rate Min': 'm_flRotRateMin',
             'Rotation Rate Max': 'm_flRotRateMax',
-            'Normalize Ouput': 'm_bNormalize',
+            'Normalize Output': 'm_bNormalize',
         }),
         'Movement Max Velocity': ('C_OP_MaxVelocity', {
             'Maximum Velocity': 'm_flMaxVelocity',
@@ -891,7 +891,7 @@ pcf_to_vpcf = {
             'use particle count instead of creation time': 'm_bUseCount',
             'local space': 'm_bUseLocalCoords',
             'offset from existing position': 'm_bOffsetExistingPos',
-            'scale from conrol point (radius 1/radius 2/offset)': 'm_nScaleCP',
+            'scale from control point (radius 1/radius 2/offset)': 'm_nScaleCP',
         }),
         'Position on Model Random': ('C_INIT_CreateOnModel', {
             'control_point_number': 'm_nControlPointNumber',
@@ -1060,7 +1060,7 @@ pcf_to_vpcf = {
         'Sequence From Control Point': ('C_INIT_SequenceFromCP', {
             'control point': 'm_nCP',
             'per particle spatial offset': 'm_vecOffset',
-            'offset propotional to radius': 'm_bRadiusScale',
+            'offset proportional to radius': 'm_bRadiusScale',
         }),
         'Position Modify Warp Random': ('C_INIT_PositionWarp', {
             'control point number': 'm_nControlPointNumber',
